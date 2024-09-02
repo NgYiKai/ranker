@@ -15,7 +15,10 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react",
-    "types": ["@types/jest"]
+    "types": ["@types/jest"],
+    "paths": {
+      "shared/*": ["../shared/*"] 
+    },
   },
   "include": ["./src", "./jest-setup.ts"]
 }
