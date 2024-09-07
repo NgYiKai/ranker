@@ -16,8 +16,8 @@ async function bootstrap() {
   app.enableCors({
     origin: [
       `http://localhost:${clientPort}`,
-      clientURL,
       new RegExp(`/^http:\/\/192\.168\.1\.([1-9]|[1-9]\d):${clientPort}$/`),
+      clientURL,
     ],
   });
   app.useWebSocketAdapter(new SocketIOAdapter(app, configService));
