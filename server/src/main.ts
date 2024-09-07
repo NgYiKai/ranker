@@ -9,7 +9,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   const configService = app.get(ConfigService);
-  const port = parseInt(configService.get('PORT'));
+  const serverPort = parseInt(configService.get('SERVER_PORT'));
   const clientPort = parseInt(configService.get('CLIENT_PORT'));
   const clientURL = configService.get('CLIENT_URL');
 
@@ -22,8 +22,8 @@ async function bootstrap() {
   });
   app.useWebSocketAdapter(new SocketIOAdapter(app, configService));
 
-  await app.listen(port);
+  await app.listen(serverPort);
 
-  logger.log(`Server running on port ${port}`);
+  logger.log(`Server running on port ${serverPort}`);
 }
 bootstrap();
