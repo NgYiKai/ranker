@@ -13,7 +13,8 @@
     "skipLibCheck": true,
     "incremental": true,
     "paths": {
-      "@nestjs/common": ["@nestjs/common/"]
+      "@nestjs/common": ["@nestjs/common/"],
+      "shared":["../shared"]
     },
   }
 }
