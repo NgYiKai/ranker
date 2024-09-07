@@ -14,7 +14,7 @@
     "incremental": true,
     "paths": {
       "@nestjs/common": ["@nestjs/common/"],
-      "shared":["../shared"]
+      "shared/*":["../shared"]
     },
   }
 }
