@@ -16,7 +16,7 @@ async function bootstrap() {
   app.enableCors();
   app.useWebSocketAdapter(new SocketIOAdapter(app, configService));
 
-  await app.listen(process.env.PORT || serverPort || 8080);
+  await app.listen(8080);
 
   logger.log(`Server running on port ${serverPort}`);
 }
