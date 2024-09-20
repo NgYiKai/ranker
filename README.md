@@ -21,10 +21,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Rankr</h3>
 
   <p align="center">
-    project_description
+    Tired of spending too much time deciding what to do? This app makes group decisions easy and fast! Whether you're picking a movie, a restaurant, or a vacation spot, our ranked-choice voting system ensures everyone’s voice is heard, and you get to a decision before the fun fades away!
     <br />
     <a href="https://github.com/NgYiKai/ranker"><strong>Explore the docs »</strong></a>
     <br />
@@ -72,7 +72,15 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `NgYiKai`, `ranker`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+A real-time, websocket-powered ranked-choice voting application designed for group decision-making. Built with React (TypeScript) on the frontend and NestJS (TypeScript) on the backend, the app utilizes Socket.io for real-time communication between users and the server. Redis is employed for rapid data storage and retrieval, while wouter handles routing and valtio manages state in the client. The result is a seamless, scalable solution for efficient, dynamic group voting.
+
+Key Features:
+* Real-Time Voting: Instant updates and interactions via WebSocket-based communication using Socket.io.
+* Ranked-Choice Voting: Allow participants to rank their choices, ensuring fair and efficient group decisions.
+* Group Decision-Making: Perfect for deciding movies, food, trips, or any group activity.
+* State Management: Efficient state handling with valtio for real-time updates across the app.
+* In-Memory Data Store: Fast, scalable data storage with Redis-JSON to handle live voting data.
+* Lightweight Frontend: Built with React (TypeScript) and wouter for minimal routing complexity.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -200,7 +208,7 @@ Project Link: [https://github.com/NgYiKai/ranker](https://github.com/NgYiKai/ran
 [license-shield]: https://img.shields.io/github/license/NgYiKai/ranker.svg?style=for-the-badge
 [license-url]: https://github.com/NgYiKai/ranker/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://linkedin.com/in/enzo-ng
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
